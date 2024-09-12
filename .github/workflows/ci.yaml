@@ -14,7 +14,7 @@ jobs:
         - name: Test
           run: npx wdio
         - uses: actions/upload-artifact@v3
-          if: failure()
+          if: ${{ failure() }}
           with:
             name: AllureReports
             path: ./allure-report
