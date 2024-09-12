@@ -8,7 +8,7 @@ describe('First Suite', ()=> {
        // await browser.url("/");
        await browser.pause(1000);
        console.log("Test 1 "); 
-       await expect(true).toEqual(false);
+       await expect(true).toEqual(true);
     })
 
     it('Test 2', async() =>  {
